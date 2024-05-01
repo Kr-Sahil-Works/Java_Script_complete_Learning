@@ -147,8 +147,19 @@ let n1,n2,n3
 
 n1=n2=n3 = 2+2    // Not used in bigtech companies bad code
 
-console.log(n2)
+// console.log(n2)
 
 let gamescore = 89
 gamescore++;
-console.log(gamescore);
+// console.log(gamescore);
+
+
+let xi = 3
+let yi = xi++  // Postfix
+
+let ix =3
+let iy = ++ix  // Prefix
+
+console.log(xi,yi)
+
+console.log(ix,iy);
