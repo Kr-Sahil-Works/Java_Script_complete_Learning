@@ -95,5 +95,60 @@ let valueInLoggined = Boolean(IsLoggined)   //      Type Casting
 let somenumber = 23
 let stringnumber = String (somenumber)
 
-console.log(stringnumber)
-console.log(typeof stringnumber)
+// console.log(stringnumber)
+// console.log(typeof stringnumber)
+
+
+
+
+// **************************   Operations   ******************************************
+
+
+let value = 3
+let negvalue = -value
+
+// console.log(negvalue)
+
+
+// console.log( 2 + 2 )
+// console.log( 2 - 2 )
+// console.log( 2 * 4 )
+
+// // Power operator        [ a ** b ]
+// console.log( 2 ** 2 ) 
+// console.log( 3 ** 3 )
+
+// console.log( 2 / 2 )
+// console.log( 2 % 2 )
+
+let str1 = "Hello"
+let str2 = " Nobita"
+
+let strm = (str1 + str2)
+
+// console.log(strm);
+
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("1" + "2")
+
+
+// console.log("1" + 2 + 2 )  // if string is frist then the others are treated same in js
+
+// console.log(1 + 2 + "2" )  // if string is not in start then others will be treated like there normal operations
+
+
+// console.log(+true)
+
+// console.log(+"")
+// console.log(+"ok")
+
+let n1,n2,n3 
+
+n1=n2=n3 = 2+2    // Not used in bigtech companies bad code
+
+console.log(n2)
+
+let gamescore = 89
+gamescore++;
+console.log(gamescore);
