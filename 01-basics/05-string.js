@@ -56,3 +56,22 @@ const searchword = 'me'
 console.log(`index of the last ${searchword} is ${demotext.lastIndexOf(searchword)}`);
 // ******************** Very Important***************************
 
+console.log(demotext.length);
+// console.log(demotext.link(url:'text'));  // no longer recommended
+
+// console.log(demotext.localeCompare);
+// console.log(demotext.match());
+// console.log(demotext.normalize());
+
+
+const str19 = 'Breaded Mushrooms';
+
+console.log(str19.padEnd(25, '.'));
+// Expected output: "Breaded Mushrooms........"
+
+const str29 = '200';
+
+console.log(str29.padEnd(5, '-'));
+// Expected output: "200  "
+console.log(str29.padStart(10, '_'));
+
