@@ -50,7 +50,7 @@ const anotherid = Symbol('123')
 const bigNumber = 493423483243284283472384283487234832n   // use [  n  ] at the end of number to make it BigInt
 
 // console.log(typeof bigNumber);
-console.log(typeof id)
+// console.log(typeof id)
 
 
 // # Non-Primitive [ reference type ]
@@ -71,10 +71,39 @@ let myobj = {
 }
 
 const myFunction = function(){                               // In Js we can store a function into a variable 
-        console.log(myobj);
+      //   console.log(myobj);
 }  
 
 
 // console.log(typeof myFunction);  // return on function is called as [object function]
 
 myFunction()  // function called
+
+//  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack( Premitive ) , Heap ( Non-Premitive )
+
+let myname = "Nobita"
+
+let anothername = myname
+
+anothername = "Sam"
+
+console.log(myname);
+console.log(anothername);
+
+let userone = {
+      emailid : "userhu@gmail.com",
+      phonenumber:4738423743,
+       upiid:"sbi@ybl",
+}
+
+let usertwo = userone;
+
+usertwo.emailid = "hackerhaibhai@gmail.com"
+
+console.log(userone);
+
+console.log(userone.emailid);
+console.log(usertwo.emailid);
+
