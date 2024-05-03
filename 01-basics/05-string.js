@@ -37,7 +37,7 @@ const url = "https://flickflights%20netlify.app"
 
 // *******************************************************************
 
-const demotext = new String('Testme-pleaseIamhere')
+const demotext = new String('Testme-please-Iamhere')
 
 // console.log(demotext.anchor);  // not used now
 // console.log(demotext.big()); // not used now
@@ -100,4 +100,19 @@ console.log(demotext.search('me'))
 console.log(demotext.toLocaleLowerCase()) // returns whole sentence in lower
 
 console.log(demotext.toLocaleUpperCase()) // returns whole sentence in upper
-console.log(demotext.toString());
+console.log(demotext.toString());  // The toString() method of String values returns this string value
+
+const greeting = '   Hello world!   ';
+
+console.log(greeting);
+// Expected output: "   Hello world!   ";
+
+console.log(greeting.trimStart());
+// Expected output: "Hello world!    ";
+
+console.log(greeting.trimEnd());
+// Expected output: "   Hello world!";
+ 
+console.log(demotext.valueOf()); // The valueOf() method of String values returns this string value.
+
+// ********************************************************* ENOUGH FOR NOW [ STILL HAVE TO LEARN MORE AS PER THE USES ]*************************************************************************************************************
