@@ -27,19 +27,32 @@ const otherNumber = 123.896434733472  // max precision is working is upto [ 20 ]
 //  console.log(Math.min(23,57,3.99,4,57,87,34,82,));
 //  console.log(Math.max(23,57,3.99,4,57,-4,87,34,82,0));
 
+// console.log(Number.isFinite(1 / 0));
+// Expected output: false
+// console.log(Number.isFinite(10 / 5));
+// Expected output: true
+
+// .isInteger();
+// .isNan();
+// .isSafeInteger();
+// .parseFloat();
+// .parseInt();
+
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // console.log(Math.random());  // Returns a random value [ between 0 and 1 ]
 // console.log(Math.random()*10); // Gives a one digit and then decimals but, can be still zero [ 0 ]
-// console.log((Math.random()*10) + 1 ); // Never  Gives zero value 
+// console.log((Math.random()*10) + 1 ); // Never  Gives zero value RETURNS DIGIT FROM ONE TO TEN 
+
 console.log((Math.floor(Math.random()*10 )) + 1 ); // Returns upto [ 1 to 10 ]
 console.log(Math.ceil((Math.random()*10) + 1));  // Returns upto [ 1 to 11 ]
 
 const min = 20
-const max = 99
+const max = 30
 
-console.log(Math.random());
-console.log(Math.floor(Math.random()));
-console.log((max-min + 1) + min)
+// console.log(Math.random());  
+// console.log(Math.floor(Math.random()));   //  Output : 0
+// console.log((max-min + 1) + min)          
 
-// console.log(Math.floor(Math.random() * (max-min + 1) + min));
+ console.log(Math.floor(Math.random() * (max-min + 1) + min));                  // ++++++++++++++++++++++++++++++++++ MOST IMPORTANT FORMULA +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
