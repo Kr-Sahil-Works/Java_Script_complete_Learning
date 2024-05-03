@@ -92,8 +92,8 @@ console.log(demotext.repeat(2)); // very useful
 
 console.log(demotext.replaceAll('e','-')) // very useful  // here all the characther are been replaced at once
 console.log(demotext.replace('e','-'))  //only replace the first characther
-
-
+ 
+// ------------------------------------------------------------------------------------------------------------------------
 
 console.log(demotext.search('me'))
 
