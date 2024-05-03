@@ -10,7 +10,7 @@
 */
 
 // # Primitive [ value type ] call by value means original data is not given [ refernce]
-//  the value is been copied and given || and changes occur in its copies not in the original memory location 
+//  The value is been copied and given || and changes occur in its copies not in the original memory location 
 /*  7 Types :
         String,
         Number(no int,float,double float only number or BigInt),
