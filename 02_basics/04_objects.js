@@ -64,8 +64,44 @@ const users = [
 
 // console.log(instagramuser);
 
-console.log(Object.keys(instagramuser));
-console.log(Object.values(instagramuser));
-console.log(Object.entries(instagramuser));
+// console.log(Object.keys(instagramuser));
+// console.log(Object.values(instagramuser));
+// console.log(Object.entries(instagramuser));
 
-console.log(instagramuser.hasOwnProperty('name'));
+// console.log(instagramuser.hasOwnProperty('name'));
+
+//  -------------------------------------------------------------------------------------------------
+
+const course ={
+    coursename: " Html & js ",
+    price: "999",
+    instractor_name: "Nobita"
+}
+
+
+// console.log(course.coursename);
+
+const {coursename :cn ,price : pp,instractor_name: i_n} = course   // De-structure of objects
+
+console.log(cn.trim())
+console.log(pp);
+console.log(i_n);
+
+
+// How data comes from API format 
+
+// In object and array but without name in --------------------   JSON FORMAT  [ java script object notation ]
+
+// JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate.
+
+// {
+//     "name":"anything",
+//     "age":"89",
+//     "course":"javascript"
+// }
+
+[
+    {},
+    {},
+    {}
+]
