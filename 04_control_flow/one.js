@@ -52,3 +52,10 @@ const debitcard = true
 if (userLogginedIn && debitcard){
     console.log(" ALLOWED TO BUY ITEMS ");
 }
+
+const googleLogin = false
+const emailLogin  = false
+
+if (googleLogin || emailLogin || userLogginedIn){         // [ || = multiple or conditions ]
+     console.log(" Login successful");
+}
