@@ -18,7 +18,7 @@ for (const num of arr) {
 
 const welcome = ["hi","hello","bye-bye"]
 
-for (const str of welcome) {
+for (const str of welcome) {                   // Direct values in for of loop
     // console.log(str);
 }
 
@@ -38,6 +38,10 @@ map.set("US","America")
 map.set("UK","England")
 map.set("AU","Austrilia")
 
+// for (const key in map) {             // For In loop not iterable for map  
+//     console.log(map[key]);
+// }
+
 // console.log(map);
 
 for (const [code , country] of map) {
@@ -49,7 +53,7 @@ const myobj = {
     game2 : "Temple Run",
 }
 
-// for (const [gno,gname] of myobj) {
+// for (const [gno,gname] of myobj) {           // For Of loop not iterable for objects
 //     console.log(gname);
 // }
 
