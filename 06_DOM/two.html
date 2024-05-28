@@ -6,7 +6,7 @@
     <title>Dom learning</title>
     <style>
         body{
-            background-color: #212121;
+            background-color: #212121 ; color:white;
         }
     </style>
 </head>
@@ -17,5 +17,13 @@
 <script>
     const mydiv = document.createElement('div')
     console.log(mydiv);
+    mydiv.style.backgroundColor = 'orange'
+    // mydiv.innerText = " OVERWRITE "
+    const mytext = document.createTextNode ("HELLO")
+    // mytext.style.color = 'white'
+    mydiv.appendChild(mytext)
+
+
+   document.body.appendChild(mydiv) 
 </script>
 </html>
