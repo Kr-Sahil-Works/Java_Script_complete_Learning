@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Event</title>
+</head>
+<body style="background-color: rgb(118, 22, 201); color: rgb(255, 255, 255);">
+    <h2>
+        AWESOME WALLPAPERS
+    </h2>
+    <ul id="images">
+        <li><img width="200px" id = "lanime" src="https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg" alt="no img">               </li>
+        <li><img width="200px" id = "city"   src="https://c4.wallpaperflare.com/wallpaper/291/819/697/illustration-city-anime-painting-wallpaper-preview.jpg" alt="no img">                      </li>
+        <li><img width="200px" id = "art"    src="https://c4.wallpaperflare.com/wallpaper/175/524/956/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg" alt="no img">    </li>
+        <li><img width="200px" id = "outrun" src="https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg" alt="no img"  >                                   </li>
+        <a href="https://github.com/Kr7-Sahil/Js-flickflights" id ="git" style="color: rgb(101, 224, 49);font-size: 30px;">GITHUB</a>   
+    </ul>
+</body>
+<script>
+    // document.getElementById('outrun').onclick = function(){
+    //     alert('neon click') }
+    
+    // attachEvent - Internet Explore
+    // jQuey - On
+// ________________________________________________________________________
+
+
+    // type, timestamp, defaultPrevented 
+    // target , toElement , srcElement , currentTarget,
+    // clientX, clientY ,screenX, screenY
+    // altKey, ctrKey, shiftKey, keyCode
+
+// ____________________________________________________________________
+
+
+    //  document.getElementById('images').addEventListener('click',function(){
+    // console.log('inside the image list');
+    //  },false)
+
+    //  document.getElementById('outrun').addEventListener('click',function(e){  
+    //     console.log('neon clicked');
+    //     e.stopPropagation()
+    //   },false)  
+       
+      // false for [ Bubbling ] true for capturing
+      
+    //   document.getElementById('git').addEventListener('click',function(e){
+    //     console.log('google clicked');
+    //     e.stopPropagation()
+    //     // e.defaultPrevented() // for one time prevent
+    //     e.preventDefault()  // for all time prevent
+    //   },false)
+    
+    document.querySelector('#images').addEventListener('click',function(e){  // Spilover
+        // console.log(e.target);
+        //  console.log(e.target.tagName);
+        //  console.log(e.target.parentNode);
+         
+        if (e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+            let removeIt = e.target.parentNode
+        
+        removeIt.remove()
+
+        }
+        
+
+        // removeIt.parentNode.removeChild(removeIt)
+
+    },false)
+
+</script>
+</html>
