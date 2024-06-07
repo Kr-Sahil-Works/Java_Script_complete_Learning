@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeouts</title>
+    <style>
+        #btn {
+           background-color: rgb(255, 0, 72);
+           color: rgb(255, 255, 255);
+           font-size: 25px;
+           font-family: Arial, Helvetica, sans-serif;
+           font-style: bold;
+           border-radius: 10px;
+           border: none;
+           padding: 5px 15px;
+        }
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS AWESOME</h1>
+    <!-- <button class="btn"></button> -->
+     <button id="btn">STOP</button>
+</body>
+<script>
+    const change = function () {
+        document.querySelector('h1').innerHTML= "THIS IS CHANGED WOW !"
+        console.log('text had been changed')
+    }
+    const change2 = function () {
+        document.querySelector('h1').innerHTML= "THIS IS AWESOME"
+        console.log('text had been changed again to start')
+    }
+    const changeme = setTimeout(change,2000)
+    
+    const changeagain = setTimeout(change2,3000)
+
+     
+    document.querySelector('#btn').addEventListener('click',function () {
+       clearTimeout(changeme)
+       clearTimeout(changeagain)
+       console.log('stopped');
+    })
+        
+        
+    
+</script>
+</html>

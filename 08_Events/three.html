@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeouts</title>
+    <style>
+        #stop {
+           background-color: rgb(255, 0, 72);
+           color: rgb(255, 255, 255);
+           font-size: 25px;
+           font-family: Arial, Helvetica, sans-serif;
+           font-style: bold;
+           border-radius: 10px;
+           border: none;
+           padding: 5px 15px;
+        }
+        #start {
+            margin-left: 20px;
+           background-color: rgb(64, 255, 0);
+           color: rgb(255, 255, 255);
+           font-size: 25px;
+           font-family: Arial, Helvetica, sans-serif;
+           font-style: bold;
+           border-radius: 10px;
+           border: none;
+           padding: 5px 15px;
+        }
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS WILL CHANGE</h1>
+    <!-- <button class="btn"></button> -->
+     <button id="stop">STOP</button>
+     <button id="start">START</button>
+</body>
+<script>
+         
+     const sayDate = function(str){
+        console.log(str,"NOBITA",Date.now());
+    }
+
+    const intervalid = setInterval(sayDate,1000,"Hi")
+
+    document.querySelector('#stop').addEventListener('click',function () {
+        clearInterval(intervalid)
+        console.log("STOPPED");
+    })
+    document.querySelector('#start').addEventListener('click',function () {
+        setInterval(sayDate,1000,"Hi")
+        console.log("STARTED");
+    })
+    
+</script>
+</html>
