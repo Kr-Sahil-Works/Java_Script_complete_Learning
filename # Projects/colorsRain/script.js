@@ -1,5 +1,7 @@
 //  Generate a random color
 
+let spuser = window.prompt("Enter Your speed in Milisecond")
+
 const randomColor = function () {
     const hex = '0123456789ABCDEF'
     let color = '#'
@@ -10,13 +12,16 @@ const randomColor = function () {
 }
 
 let interval_id;
-
+let mesinterval;
+let speed = spuser ;
 console.log(randomColor())
 
 function startcolorchanging (){
-     
+      
     if (!interval_id){
-     interval_id = setInterval(colorrain,500)
+    
+     interval_id = setInterval(colorrain,speed)
+       
     }
      function colorrain (){
         document.body.style.backgroundColor= randomColor();
@@ -26,6 +31,7 @@ function startcolorchanging (){
 
 function stopcolorchanging() {
     clearInterval(interval_id)
+    clearInterval(mesinterval)
     interval_id = null ; 
 }
 
